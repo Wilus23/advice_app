@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+            width: 100%;
+            margin: 0;
+        }
+        .btnBox button{
+            margin-top: 0;
+            margin-right: 50px;
+        }
+        .showAdvice{
+            width: 200px;
+        }
+        .showOptions{
+            width: 200px;
+        }
+        form button{
+            margin-top: 10px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 100%;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 10px;
+            margin-top: 20px;;
+        }
+        .btnBox{
+            display: flex;
+            width: 100%;
+        }
+        .h1{
+            width: 100%;
+        }
+        @media screen and (max-width: 768px){
+            h2{
+                font-size: 20px;
+                max-width: 90%;
+            }
+        }
+            </style>
+</head>
+<body>
+    <div class="box">
+    <form action="">
+        <label>Dodaj myśl: </label><input type="text"><br>
+        <button class="add">Dodaj</button>
+        <button class="clean">Wyczyść</button>
+    </form>
+    <h2>Komputerze kochany, pokaż co mam zrobić z tym o czym myślę</h2>
+    <div class="btnBox">
+    <button class="showAdvice">Pokaż radę</button>
+    <button class="showOptions">Pokaż możliwości</button>
+</div>
+    <div class="h1">
+        <h1></h1>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
